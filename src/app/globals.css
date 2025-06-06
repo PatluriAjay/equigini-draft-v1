@@ -1,0 +1,334 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+
+  --primary-color: #a330ae;
+
+  /* Secondary Colors */
+  --secondary-color-1: #30aea3;
+  --secondary-color-2: #f5b700;
+  --secondary-color-3: #b3b3b3;
+
+  /* Tertiary Colors */
+  --tertiary-color-1: #d87dbe;
+  --tertiary-color-2: #2c2c2c;
+  --tertiary-color-3: #d6b3e5;
+
+  /* Fonts */
+  --font-primary: "Inter var", Inter, "Helvetica Neue", Arial, sans-serif;
+  --font-secondary: "Open Sans", sans-serif;
+  --font-tertiary: "Poppins", sans-serif;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-tertiary);
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+} */
+
+/* colors */
+.primary-color {
+  color: var(--primary-color);
+}
+.secondary-color-1 {
+  color: var(--secondary-color-1);
+}
+.secondary-color-2 {
+  color: var(--secondary-color-2);
+}
+.secondary-color-3 {
+  color: var(--secondary-color-3);
+}
+.tertiary-color-1 {
+  color: var(--tertiary-color-1);
+}
+.tertiary-color-2 {
+  color: var(--tertiary-color-2);
+}
+.tertiary-color-3 {
+  color: var(--tertiary-color-3);
+}
+/* background colors */
+.bg-primary {
+  background-color: var(--primary-color);
+}
+.bg-secondary-1 {
+  background-color: var(--secondary-color-1);
+}
+.bg-secondary-2 {
+  background-color: var(--secondary-color-2);
+}
+.bg-secondary-3 {
+  background-color: var(--secondary-color-3);
+}
+.bg-tertiary-1 {
+  background-color: var(--tertiary-color-1);
+}
+.bg-tertiary-2 {
+  background-color: var(--tertiary-color-2);
+}
+.bg-tertiary-3 {
+  background-color: var(--tertiary-color-3);
+}
+.bg-tertiary-color-3 {
+  background-color: #a330ae20;
+}
+
+/* font families */
+.intervar-font {
+  font-family: var(--font-tertiary);
+}
+.open-sans-font {
+  font-family: var(--font-tertiary);
+}
+.poppins-font {
+  font-family: var(--font-tertiary);
+  font-weight: 200;
+}
+
+/* font weights */
+.fw-100 {
+  font-weight: 100;
+}
+.fw-200 {
+  font-weight: 200;
+}
+.fw-300 {
+  font-weight: 300;
+}
+.fw-400 {
+  font-weight: 400;
+}
+.fw-500 {
+  font-weight: 500;
+}
+.fw-600 {
+  font-weight: 600;
+}
+.fw-700 {
+  font-weight: 700;
+}
+.fw-800 {
+  font-weight: 800;
+}
+.fw-900 {
+  font-weight: 900;
+}
+/* font sizes */
+.font16 {
+  font-size: 16px;
+}
+.font18 {
+  font-size: 18px;
+}
+.font20 {
+  font-size: 20px;
+}
+.font24 {
+  font-size: 24px;
+}
+.font28 {
+  font-size: 28px;
+}
+.font32 {
+  font-size: 32px;
+}
+.font36 {
+  font-size: 36px;
+}
+.font40 {
+  font-size: 40px;
+}
+
+/* text styles */
+.title {
+}
+
+.subtitle {
+}
+
+.main-heading {
+}
+
+.sub-heading {
+  font-weight: 600;
+  font-family: var(--font-tertiary);
+}
+
+.page-subheading {
+}
+
+.card-title {
+}
+
+.card-subtitle {
+}
+
+.paragraph {
+}
+
+.card-paragraph {
+}
+
+.link-button {
+}
+
+.link-text {
+  font-size: 16px;
+}
+
+/* button styles */
+.create-primary-button {
+  color: white;
+  background-color: var(--primary-color);
+  font-weight: 600;
+  font-family: var(--font-primary);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.create-secondary-button {
+  color: white;
+  background-color: var(--primary-color);
+  font-weight: 500;
+  font-family: var(--font-primary);
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 5px 10px;
+}
+.create-teritory-button {
+  background-color: var(--secondary-color-3);
+  color: black;
+}
+
+.fileupload-button {
+  background-color: var(--tertiary-color-2);
+}
+.create-button:hover {
+}
+
+.cancel-button {
+}
+
+.cancel-button:hover {
+}
+
+/*  Table Styles */
+.equi-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 0.5rem;
+  background: white;
+  font-family: var(--font-primary);
+}
+.equi-table-header-row {
+  background: #a330ae20;
+}
+.equi-table-header-cell {
+  padding: 0.75rem 1rem;
+  font-weight: 600;
+  color: #4b5563;
+  text-align: left;
+  border-bottom: 2px solid #e5e7eb;
+}
+.equi-table-row {
+  background: white;
+  transition: background 0.2s;
+}
+.equi-table-row:hover {
+  background: #f9fafb;
+}
+.equi-table-cell {
+  padding: 0.5rem 1rem;
+  color: #374151;
+  border-top: 1px solid #f3f4f6;
+}
+.equi-table-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+.equi-action-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.375rem;
+  border: 1px solid #e5e7eb;
+  background: white;
+  color: #a330ae;
+  transition: background 0.2s, color 0.2s;
+  cursor: pointer;
+}
+.equi-action-btn:hover {
+  background: #f3e8ff;
+  color: #661c6f;
+}
+
+.equi-action-editbtn {
+  color: rgb(53, 53, 140);
+}
+.equi-action-editbtn:hover {
+  color: #1e3a8a;
+}
+.equi-action-deletebtn {
+  color: #dc2626;
+}
+.equi-action-deletebtn:hover {
+  color: #b91c1c;
+}
+
+.box-shadow {
+  box-shadow: 0 1px 0px 0px #0003;
+}
+
+.box-shadow-lg {
+  box-shadow: 0px 0px 15px 7px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Custom color for react-select dropdowns using .tertiary-color-3 */
+.react-select.tertiary-color-3__option:hover,
+.react-select.tertiary-color-3__option--is-focused,
+.react-select.tertiary-color-3__option:active,
+.react-select.tertiary-color-3__option--is-active {
+  background-color: #a330ae20 !important;
+  color: black;
+}
+
+/* Optional: If you want to style selected option as well */
+.react-select.tertiary-color-3__option--is-selected {
+  background-color: #a330ae20 !important;
+  color: black;
+}
+.react-select.tertiary-color-3__control--is-focused {
+  border-color: #a330ae20 !important;
+  box-shadow: 0 0 0 1px #a330ae20 !important;
+}
+/* input:focus {
+  outline: none;
+  outline: 2px solid #a330ae20;
+  border-color: #a330ae20;
+  box-shadow: 0 0 0 1px #a330ae20;
+  transition: all 0.2s ease;
+} */
