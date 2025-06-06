@@ -8,6 +8,7 @@ const sectorOptions = [
   { value: "Consumer", label: "Consumer" },
   { value: "Healthcare", label: "Healthcare" },
   { value: "EdTech", label: "EdTech" },
+  
 ];
 const stageOptions = [
   { value: "Early", label: "Early" },
@@ -36,6 +37,7 @@ const collateralTypeOptions = [
   { value: "pitch_deck", label: "Pitch Deck" },
   { value: "im", label: "IM" },
   { value: "financials", label: "Financials" },
+  
 ];
 
 const customStyles = {
@@ -224,6 +226,7 @@ export default function CreateDealStepper() {
                     required
                     classNamePrefix="react-select tertiary-color-3"
                     styles={customStyles}
+                   
                   />
                 </div>
               </div>

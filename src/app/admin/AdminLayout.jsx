@@ -168,7 +168,7 @@ export default function AdminLayout({ children }) {
         </div>
         <div className="flex items-center ">
           {/* Add Search Bar only in desktop*/}
-          <div className="flex items-center gap-2 px-6 ">
+          <div className="hidden md:flex items-center gap-2 px-6 ">
             <div className="relative flex-1 items-center flex">
               <input
                 type="text"
